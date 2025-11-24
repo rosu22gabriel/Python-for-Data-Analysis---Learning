@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b289f8f9-b658-4b76-ac00-cdd4e5e0ed16" name="Changes" comment="added a part of the first seminar">
+      <change beforePath="$PROJECT_DIR$/.idea/PythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar3/Seminar3_1089/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar3/Seminar3_1089/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +55,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/g05ro/PycharmProjects/PythonProject/Seminar2"
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/g05ro/PycharmProjects/RecapDSAD"
   }
 }]]></component>
   <component name="RecentsManager">
