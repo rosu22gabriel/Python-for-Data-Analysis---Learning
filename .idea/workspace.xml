@@ -5,30 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b289f8f9-b658-4b76-ac00-cdd4e5e0ed16" name="Changes" comment="added a part of the first seminar">
-      <change afterPath="$PROJECT_DIR$/Seminar10_1089/single_main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar12_1089/single_main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar13_1089/main_single.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar13_1089/main_single_no_comm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TipSubiectClusterIerarhic/IMG-20260129-WA0001 (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TipSubiectClusterIerarhic/dataIN/DataSet_43.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TipSubiectClusterIerarhic/dataIN/NatLocMovement.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TipSubiectClusterIerarhic/dataIN/PopulationLoc.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TipSubiectClusterIerarhic/dataIN/README_dataIN_fictiv.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TipSubiectClusterIerarhic/solutie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TipSubiectPCA-AD/d09798c7-b51e-4766-a9a6-02f0b473332f_copie.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TipSubiectPCA-AD/solutie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TipSubiectPCA/IMG-20260129-WA0005 (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TipSubiectPCA/dataIN/NatLocMovement.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TipSubiectPCA/dataIN/PopulationLoc.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TipSubiectPCA/solutie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TipSubiectPCA2/solutie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TipSubiectTest/935bb79e-d47e-43fd-880c-6cb415f2eab1_copie.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TipSubiectTest/solutii.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TutoringCanonica/Model_subiect_RO.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TutoringCanonica/dataIN/DataSet_34.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TutoringCanonica/dataIN/Industrie.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TutoringCanonica/dataIN/PopulatieLocalitati.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TutoringCanonica/solutie.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
