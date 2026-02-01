@@ -5,10 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b289f8f9-b658-4b76-ac00-cdd4e5e0ed16" name="Changes" comment="added a part of the first seminar">
-      <change beforePath="$PROJECT_DIR$/.idea/PythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar10_1089/single_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar12_1089/single_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar13_1089/main_single.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar13_1089/main_single_no_comm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TipSubiectClusterIerarhic/IMG-20260129-WA0001 (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TipSubiectClusterIerarhic/dataIN/DataSet_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TipSubiectClusterIerarhic/dataIN/NatLocMovement.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TipSubiectClusterIerarhic/dataIN/PopulationLoc.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TipSubiectClusterIerarhic/dataIN/README_dataIN_fictiv.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TipSubiectClusterIerarhic/solutie.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TipSubiectPCA-AD/d09798c7-b51e-4766-a9a6-02f0b473332f_copie.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TipSubiectPCA-AD/solutie.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TipSubiectPCA/IMG-20260129-WA0005 (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TipSubiectPCA/dataIN/NatLocMovement.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TipSubiectPCA/dataIN/PopulationLoc.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TipSubiectPCA/solutie.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TipSubiectPCA2/solutie.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TipSubiectTest/935bb79e-d47e-43fd-880c-6cb415f2eab1_copie.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TipSubiectTest/solutii.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutoringCanonica/Model_subiect_RO.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutoringCanonica/dataIN/DataSet_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutoringCanonica/dataIN/Industrie.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutoringCanonica/dataIN/PopulatieLocalitati.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutoringCanonica/solutie.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seminar3/Seminar3_1089/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar3/Seminar3_1089/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,31 +67,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Python.main (1).executor": "Run",
-    "Python.main (2).executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/g05ro/PycharmProjects/RecapDSAD"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python.grafice.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (2).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (3).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main_single.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prelucrare_date.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pypython.executor&quot;: &quot;Run&quot;,
+    &quot;Python.single_main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.solutie (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.solutie (2).executor&quot;: &quot;Run&quot;,
+    &quot;Python.solutie (3).executor&quot;: &quot;Run&quot;,
+    &quot;Python.solutie.executor&quot;: &quot;Run&quot;,
+    &quot;Python.solutii.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/g05ro/PycharmProjects/PythonProject/TipSubiectPCA/dataIN&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\g05ro\PycharmProjects\PythonProject\TipSubiectPCA\dataIN" />
       <recent name="C:\Users\g05ro\PycharmProjects\PythonProject\Seminar2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\g05ro\PycharmProjects\PythonProject\Seminar2\data_in" />
-      <recent name="C:\Users\g05ro\PycharmProjects\PythonProject\Seminar1\data_in" />
-      <recent name="C:\Users\g05ro\PycharmProjects\PythonProject\Seminar1" />
+      <recent name="C:\Users\g05ro\PycharmProjects\PythonProject\Seminar12_1089" />
+      <recent name="C:\Users\g05ro\PycharmProjects\PythonProject\TipSubiectPCA-AD" />
+      <recent name="C:\Users\g05ro\PycharmProjects\PythonProject\TipSubiectTest" />
+      <recent name="C:\Users\g05ro\PycharmProjects\PythonProject\TipSubiectClusterIerarhic" />
+      <recent name="C:\Users\g05ro\PycharmProjects\PythonProject\TipSubiectPCA" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (2)">
-    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.single_main">
+    <configuration name="main_single" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,11 +114,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seminar2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seminar13_1089" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seminar2/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seminar13_1089/main_single.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -92,7 +127,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="single_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,11 +136,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seminar3/Seminar3_1089" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seminar12_1089" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seminar3/Seminar3_1089/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seminar12_1089/single_main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -114,7 +149,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="solutie (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,11 +158,55 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seminar1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TipSubiectPCA" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seminar1/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TipSubiectPCA/solutie.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="solutie (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TipSubiectPCA2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TipSubiectPCA2/solutie.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="solutii" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TipSubiectTest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TipSubiectTest/solutii.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,9 +217,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main (2)" />
-        <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.single_main" />
+        <item itemvalue="Python.main_single" />
+        <item itemvalue="Python.solutii" />
+        <item itemvalue="Python.solutie (3)" />
+        <item itemvalue="Python.solutie (2)" />
       </list>
     </recent_temporary>
   </component>

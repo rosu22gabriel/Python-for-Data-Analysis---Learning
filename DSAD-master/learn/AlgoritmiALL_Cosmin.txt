@@ -1,0 +1,166 @@
+-EFA
+import numpy as np
+from factor_analyzer import FactorAnalyzer, calculate_kmo
+
+x = np.ndarray() # standardized
+
+kmo = calculate_kmo(x) # kmo[1] needs to be > 0.6
+
+efa = FactorAnalyzer(n_factors=x.shape[1] - 1) # n_factors needs to be no. columns - 1
+scores = efa.fit_transform(x)
+factorLoadings = efa.loadings_
+eigenvalues = efa.get_eigenvalues()
+communalities = efa.get_communalities()
+specificFactors = efa.get_uniquenesses()
+
+-HCA
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.cluster.hierarchy import fcluster, linkage
+from sklearn.cluster import KMeans
+
+x = np.ndarray() # standardized
+
+def threshold(h: np.ndarray):
+    n = h.shape[0] # no of junctions
+    dist_1 = h[1:n, 2]
+    dist_2 = h[0:n - 1, 2]
+    diff = dist_1 - dist_2
+    j = np.argmax(diff) # junction with max. diff
+    t = (h[j, 2] + h[j + 1, 2]) / 2 # threshold
+    return t, j, n
+
+def clusters(h: np.ndarray, k):
+    cat = fcluster(h, k, criterion='maxclust')
+    return ['C' + str(i) for i in cat]
+
+HC = linkage(x, method='ward') # the method is given in the requirements
+t, j, n = threshold(HC)
+
+# determine the clusters belonging to the maximum stability partition
+k = n - j
+labels = clusters(HC, k) # add this to the original DataFrame
+
+# KMeans
+C = np.ndarray() # principal components
+kmeans = KMeans(n_clusters=5, n_init=10) # n_clusters is given in the requirements
+kmeans_labels = kmeans.fit_predict(C)
+plt.scatter(C[:, 0], C[:, 1], c=kmeans_labels, cmap='viridis')
+
+-LDA
+import pandas as pd
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.model_selection import train_test_split
+
+x = pd.DataFrame() # DOES NOT need to be standardized
+x_applied = pd.DataFrame() # DOES NOT need to be standardized
+
+tinta = 'VULNERAB' # column specified in the requirements
+variabile = list(x.columns.values[:-1]) # the other columns
+
+x_train, x_test, y_train, y_test = train_test_split(x[variabile], x[tinta], train_size=0.4)
+lda = LinearDiscriminantAnalysis()
+lda.fit(x_train, y_train) # trains the model
+
+scores = lda.transform(x_test)
+prediction_test = lda.predict(x_test)
+prediction_applied = lda.predict(x_applied)
+
+-PCA
+import numpy as np
+from sklearn.decomposition import PCA
+
+x = np.ndarray() # standardized
+
+pca = PCA()
+C = pca.fit_transform(x)
+alpha = pca.explained_variance_
+a = pca.components_.T
+rxc = a * np.sqrt(alpha) # factor loadings
+scores = C / np.sqrt(alpha)
+C2 = C * C
+quality = np.transpose(C2.T / np.sum(C2, axis=1))
+contributions = C2 / (x.shape[0] * alpha)
+communalities = np.cumsum(rxc * rxc, axis=1) # correlation between observed variables and principal components
+pve = pca.explained_variance_ratio_
+
+-CCA
+import numpy as np
+from sklearn.cross_decomposition import CCA
+
+x = np.ndarray() # standardized
+y = np.ndarray() # standardized
+
+p = x.shape[1]
+q = y.shape[1]
+m = min(p, q)
+cca = CCA(n_components=m)
+z, u = cca.fit_transform(x, y)
+rxz = np.corrcoef(x, z[:, :m], rowvar=False)[:p, p:]
+ryu = np.corrcoef(y, u[:, :m], rowvar=False)[:q, q:]
+r = []
+for i in range(m):
+    r.append(np.corrcoef(z[:, i], u[:, i], rowvar=False)[0, 1])
+
+-utils
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+
+x = pd.DataFrame()
+labels = list() # list of labels for variables
+
+# replace NAN 
+x.fillna(np.mean(x[labels], axis=0), inplace=True)
+
+# standardize
+x = StandardScaler().fit_transform(x)
+-plots
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.cluster.hierarchy import dendrogram
+from seaborn import heatmap, kdeplot
+
+
+def correlogram(x):
+    plt.figure(figsize=(15, 11))
+    plt.title('Correlogram')
+    heatmap(data=x, vmin=-1, vmax=1, cmap='bwr', annot=True)
+
+def linePlot(alpha):
+    plt.figure(figsize=(11, 8))
+    plt.title('Line plot')
+    Xindex = ['C' + str(k + 1) for k in range(len(alpha))]
+    plt.plot(Xindex, alpha, 'bo-')
+    plt.axhline(1, color='r')
+
+def biplot(x, y):
+    plt.figure(figsize=(7, 7))
+    plt.title('Biplot CCA')
+    plt.xlabel("x")
+    plt.ylabel("y")
+    plt.scatter(x[:, 0], x[:, 1], c='r', label='X')
+    plt.scatter(y[:, 0], y[:, 1], c='b', label='Y')
+    plt.legend()
+
+def dendrogram(h, labels, threshold):
+    plt.figure(figsize=(15, 8))
+    plt.title('Clusters')
+    dendrogram(h, labels=labels, leaf_rotation=30)
+    plt.axhline(threshold, c='r')
+
+def correlationCircle(data):
+    plt.figure(figsize=(12, 12))
+    plt.title('Correlation circle')
+    T = [t for t in np.arange(0, np.pi*2, 0.01)]
+    X = [np.cos(t) for t in T]
+    Y = [np.sin(t) for t in T]
+    plt.plot(X, Y)
+    plt.axhline(0, c='g')
+    plt.axvline(0, c='g')
+    plt.scatter(data[:, 0], data[:, 1])
+
+def kdeplot(scores):
+    plt.figure(figseize=(12, 12))
+    plt.title('Scores')
+    kdeplot(scores, fill=True)
